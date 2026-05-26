@@ -12,8 +12,8 @@ This repository serves as both a proof of completion for the 100 Days of Code bo
 
 ## Pre-Implementation Planning
 
-I use draw.io to make flow charts for my programs before doing anything else. I have provided the flow chart below, for maximum readability click on it to open it full-size in a new tab.
+I use draw.io to make flow charts for my programs before doing anything else. I have provided the flow chart below, for maximum readability right click on it and open the image in a new tab.
 
-[![100 Days of Code Capstone Flowchart](./100DFPFlow.drawio.svg)](./100DFPFlow.drawio.svg)
+![100 Days of Code Capstone Flowchart](./100DFPFlow.drawio.svg)
 
 This diagram serves as the initial architectural blueprint mapped out prior to coding. The final production scripts may include optimizations, refactored logic, or structural adjustments that diverge from this initial layout.
