@@ -368,7 +368,7 @@ def run_dashboard():
     build_poverty_layer(fig, filtered_overall, filtered_zip, controls, unique_zips)
     apply_master_canvas_layout(fig, controls["year_range"])
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 if __name__ == "__main__":
     run_dashboard()
