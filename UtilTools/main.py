@@ -1,5 +1,11 @@
 import customtkinter as ctk
 
+from typing_test import TypingTestFrame
+from read_to_me import ReadToMeFrame
+from morse_code import MorseCodeFrame
+from colors import ColorsFrame
+from watermark import WatermarkFrame
+
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
 
@@ -12,6 +18,21 @@ class TabView(ctk.CTkTabview):
         self.add("Morse Code Generator")
         self.add("Color From Image")
         self.add("Watermark Image")
+
+        self.typing_test = TypingTestFrame(master=self.tab("Typing Test"))
+        self.typing_test.pack(fill="both", expand=True)
+
+        self.typing_test = ReadToMeFrame(master=self.tab("Read to Me"))
+        self.typing_test.pack(fill="both", expand=True)
+
+        self.typing_test = MorseCodeFrame(master=self.tab("Morse Code Generator"))
+        self.typing_test.pack(fill="both", expand=True)
+
+        self.typing_test = ColorsFrame(master=self.tab("Color From Image"))
+        self.typing_test.pack(fill="both", expand=True)
+
+        self.typing_test = WatermarkFrame(master=self.tab("Watermark Image"))
+        self.typing_test.pack(fill="both", expand=True)
 
 class UtilityApp(ctk.CTk):
     def __init__(self):
