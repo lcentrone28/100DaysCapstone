@@ -19,20 +19,20 @@ class TabView(ctk.CTkTabview):
         self.add("Color From Image")
         self.add("Watermark Image")
 
-        self.typing_test = TypingTestFrame(master=self.tab("Typing Test"))
-        self.typing_test.pack(fill="both", expand=True)
+        self.typing_test_frame = TypingTestFrame(master=self.tab("Typing Test"))
+        self.typing_test_frame.pack(fill="both", expand=True)
 
-        self.typing_test = ReadToMeFrame(master=self.tab("Read to Me"))
-        self.typing_test.pack(fill="both", expand=True)
+        self.read_to_me_frame = ReadToMeFrame(master=self.tab("Read to Me"))
+        self.read_to_me_frame.pack(fill="both", expand=True)
 
-        self.typing_test = MorseCodeFrame(master=self.tab("Morse Code Generator"))
-        self.typing_test.pack(fill="both", expand=True)
+        self.morse_code_frame = MorseCodeFrame(master=self.tab("Morse Code Generator"))
+        self.morse_code_frame.pack(fill="both", expand=True)
 
-        self.typing_test = ColorsFrame(master=self.tab("Color From Image"))
-        self.typing_test.pack(fill="both", expand=True)
+        self.colors__frame = ColorsFrame(master=self.tab("Color From Image"))
+        self.colors__frame.pack(fill="both", expand=True)
 
-        self.typing_test = WatermarkFrame(master=self.tab("Watermark Image"))
-        self.typing_test.pack(fill="both", expand=True)
+        self.watermark_frame = WatermarkFrame(master=self.tab("Watermark Image"))
+        self.watermark_frame.pack(fill="both", expand=True)
 
 class UtilityApp(ctk.CTk):
     def __init__(self):
