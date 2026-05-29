@@ -38,7 +38,7 @@ class UtilityApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.geometry("600x350")
+        self.geometry("1500x1000")
         self.title("Utility App")
 
         self.grid_rowconfigure(0, weight=1)
