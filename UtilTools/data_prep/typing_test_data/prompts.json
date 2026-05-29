@@ -1,0 +1,394 @@
+{
+    "prompts": [
+        {
+            "paragraph": "Bobby Beale is a fictional character from the BBC soap opera EastEnders, who made his first appearance in episode 2557, originally broadcast on 24 July 2003. The character was originally played by Kevin Curran as an infant. Prior to his introduction, Bobby's paternity is at the centre of a storyline and is resolved when Ian Beale (Adam Woodyatt) is revealed as Bobby's father. His mother, Laura Beale (Hannah Waterman), is killed off in 2004 and Bobby's stepmother, Jane Beale (Laurie Brett), later adopts Bobby. Curran was replaced by Alex Francis in 2007. Following Jane's departure, Bobby finds a mother figure in Mandy Salter (Nicola Stapleton) and is upset when she leaves. When Francis decided to concentrate on his schooling, the character was recast again, with Rory Stroud in the role. Producers decided to recast the character again in 2014 and the character did not appear for six months to aid this transition. When he returned, Bobby was portrayed by Eliot Carrington. Bobby was placed at the centre of the \"Who Killed Lucy Beale?\" story following his return and was later revealed to be the killer. The story continued until show bosses decided to write out the character, while he was in prison. Bobby departed in episode 5303, first broadcast on 17 June 2016. Carrington reprised the role in 2017 for a cameo appearance in episode 5582, originally broadcast on 17 October, as part of Jane's exit from the series. The character's return was confirmed in April 2019, with the role recast again, to actor Clay Milner Russell. He returned in the second episode broadcast on 13 June 2019. In April 2024, it was announced that Milner Russell had decided to leave the soap after five years. His exit aired on 19 September 2024. Following his return, Bobby's storylines have included exploring the Islamic faith, being bullied by Dennis Rickman Jnr (Bleu Landau) which leads to his being hospitalised in a Islamophobic attack, a feud with his older half-brother Peter Beale (Dayle Hudson), being infatuated with Dotty Cotton (Milly Zero), becoming a suspect in his father's attack, a relationship with Dana Monroe (Barbara Smith), a friendship with Freddie Slater (Bobby Brazier), falling in love with Anna Knight (Molly Rainford), unaware that she is Lucy and Peter's half-sister, a feud with Peter and Anna's mother Cindy Beale (Michelle Collins), being involved in a love triangle with Anna and Freddie, and discovering that Anna had aborted their child, leading to his departure from the square.",
+            "length": 2509,
+            "length type": "longest",
+            "prompt name": "Bobby Beale is a fictiona..."
+        },
+        {
+            "paragraph": "The Netherlands Cancer Institute (NKI) in Amsterdam was founded in 1913 by, among others, the surgeon Jacob Rotgans. The NKI, together with the Antoni van Leeuwenhoekziekenhuis, is formed into the NKI-AVL, which combines a scientific research institute with a specialized clinic focused on combating the disease cancer. Since 1973 the NKI is located next to the Slotervaartziekenhuis in Amsterdam. NKI is a member of EU-LIFE, an alliance of leading life sciences research centres in Europe. Core principles of the institute are new methods for diagnostics and treatment. The primary clusters of the NKI-AVL are: Research, Surgical Oncological Disciplines, Medical Oncological Disciplines, Radiotherapy and Diagnostic Oncological Disciplines. At the start of the 1990s, the NKI, together with the VU University Amsterdam created the Research School for Oncology Amsterdam (OOA) for postdoctoral research and schooling. This research school was accredited by the Royal Netherlands Academy of Arts and Sciences in 1993. In 2020, scientists at the Institute published observations which have indicated the possibility of a new human organ, a salivary gland, the first such description of a new organ in three hundred years.",
+            "length": 1219,
+            "length type": "long",
+            "prompt name": "The Netherlands Cancer In..."
+        },
+        {
+            "paragraph": "\"So Called Life\" is a single by the Canadian rock band Three Days Grace. It was released on November 29, 2021, as the lead single from the band's seventh studio album Explosions. The song was available digitally on music streaming services on December 1, 2021. \"So Called Life\" was the most played song on rock radio in 2022.",
+            "length": 325,
+            "length type": "short",
+            "prompt name": "\"So Called Life\" is a sin..."
+        },
+        {
+            "paragraph": "The European Association for Artificial Intelligence (EurAI), formerly the European Coordinating Committee for Artificial Intelligence (ECCAI), is a European organization representing national artificial intelligence societies and research communities. Its aim is to promote the study, research, and application of artificial intelligence (AI) in Europe.",
+            "length": 354,
+            "length type": "average",
+            "prompt name": "The European Association ..."
+        },
+        {
+            "paragraph": "The 1895 Nebraska Bugeaters football team represented the University of Nebraska in the 1895 college football season. The team was coached by first-year head coach Charles Thomas and played their one home game at the M Street Park in Lincoln, Nebraska. They competed as members of the Western Interstate University Football Association. Thomas spent two years as an assistant before being promoted to head coach following the departure of Frank Crawford at the conclusion of the 1894 season. After the season, Nebraska's second consecutive WIUFA conference championship, Thomas left to become the head coach at Arkansas.",
+            "length": 620,
+            "length type": "average",
+            "prompt name": "The 1895 Nebraska Bugeate..."
+        },
+        {
+            "paragraph": "The International Women's Media Foundation awards are annual prizes for women journalists awarded by the International Women's Media Foundation (IWMF) since its foundation in 1990: the Courage in Journalism Award (awarded since 1990); the Lifetime Achievement Award (awarded from 1991 to 2018); the Anja Niedringhaus Courage in Photojournalism Award (awarded since 2015); the Gwen Ifill Award (awarded since 2017); and the Wallis Annenberg Justice for Women Journalists Award (awarded since 2021). The 2014 award ceremonies were on October 22 in New York, and October 29 in Los Angeles.",
+            "length": 586,
+            "length type": "average",
+            "prompt name": "The International Women's..."
+        },
+        {
+            "paragraph": "Branden B. Albert (born November 4, 1984) is an American former professional football player who was an offensive tackle for nine seasons in the National Football League (NFL). He played college football for the Virginia Cavaliers and was selected by the Kansas City Chiefs 15th overall in the 2008 NFL draft. He also played for the Miami Dolphins and was a member of Jacksonville Jaguars before announcing his retirement in 2017.",
+            "length": 430,
+            "length type": "average",
+            "prompt name": "Branden B. Albert (born N..."
+        },
+        {
+            "paragraph": "Chief Lady Bird (also known as Nancy King) is a Chippewa and Potawatomi artist, illustrator, educator and community activist from Rama First Nation and Moosedeer Point First Nation, who currently resides in Toronto, Ontario.  Chief Lady Bird (Ogimaakwebnes) is her spirit name, which she uses professionally as an artist. Her art is focused on foregrounding the experiences of Indigenous women.",
+            "length": 394,
+            "length type": "average",
+            "prompt name": "Chief Lady Bird (also kno..."
+        },
+        {
+            "paragraph": "To the Shores of Tripoli is a 1942 American Technicolor film directed by H. Bruce Humberstone and starring John Payne, Maureen O'Hara and Randolph Scott. The film was produced by Darryl F. Zanuck. Its cinematography was nominated for an Academy Award in 1943. Titled after a lyric in the Marines' Hymn, which contains the phrase \"... to the shores of Tripoli\" (which is, itself, a reference to the Battle of Derne), the film is one of the last of the pre-Pearl Harbor service films. When the film was in post-production the Pearl Harbor attack occurred, causing the studio to shoot a new ending in which Payne's character re-enlists. The supporting cast features Nancy Kelly, Maxie Rosenbloom, Harry Morgan, and Alan Hale Jr.",
+            "length": 725,
+            "length type": "average",
+            "prompt name": "To the Shores of Tripoli ..."
+        },
+        {
+            "paragraph": "The opus gallicum (Latin for \"Gallic work\") was a technique of construction whereby precise holes were created in stone masonry for the insertion of wooden beams to create a wooden infrastructure. The technique was so named because, though its presence is attested in protohistoric times, its use was common enough in Gaul to merit mention in Julius Caesar's Commentarii de Bello Gallico and was frequently employed in the Merovingian era. The technique was imported by the Normans into the Molise, where it was used extensively in the raising of castles in a short time. Gaulish masons are even known to have brought the technique from Merovingian Francia to Anglo-Saxon England during the 7th and 8th centuries and employed it in church architecture. The opus gallicum served not only as an infrastructural base, but also a superstructural binding element designed to strengthen the masonry. While the arrangement of some of the holes found in preserved structures is often perplexing, leaving doubt as to the exact function of the beams, modern scholarship has largely moved away from the theory that the opus gallicum was a rare and inefficient method. Overall the technique was not uncommon in the Middle Ages.",
+            "length": 1216,
+            "length type": "long",
+            "prompt name": "The opus gallicum (Latin ..."
+        },
+        {
+            "paragraph": "\"Little Sir Echo\" is a song originally composed in 1917 by John Sylvester Fearis with lyrics by Laura Rountree Smith. It became popular in the 1920s and 1930s as children's camp song. In 1939, Adele Girard and Joe Marsala wrote a revised version with a new arrangement and additional verse; the revised version was recorded by at least 22 artists in 1939, including versions by Horace Heidt, Bing Crosby, Gene Autry, Doris Day, Guy Lombardo, and other big bands. It became one of the biggest hits of 1939 and has since been covered by additional artists, including Jonah Jones with Roy Eldridge, Jerry Lewis, Louis Prima, Joe Williams, The Bonzo Dog Band, and The Wiggles.",
+            "length": 672,
+            "length type": "average",
+            "prompt name": "\"Little Sir Echo\" is a so..."
+        },
+        {
+            "paragraph": "Martellictis is an extinct genus of mustelid that lived during the Pliocene epoch. The type species, Martellictis ardea, was initially classified as a species of Mustela and later as a species of Pannonictis or Enhydrictis before it was given its own genus in 2018.",
+            "length": 265,
+            "length type": "short",
+            "prompt name": "Martellictis is an extinc..."
+        },
+        {
+            "paragraph": "The Koddaert Ladies Open was a tournament for professional female tennis players played on indoor hard courts. The event was classified as a $100,000+H ITF Women's Circuit tournament and was held in Torhout, Belgium, from 2007 to 2010. In 2010, two editions of the tournament were held, with the April-held tournament named the Telenet Open.",
+            "length": 341,
+            "length type": "short",
+            "prompt name": "The Koddaert Ladies Open ..."
+        },
+        {
+            "paragraph": "Eriophora nephiloides is a species of orb weaver in the spider family Araneidae first described in Biologia Centrali-Americana: Arachnida-Aranediea by Octavius Pickard-Cambridge in 1889. Its recognized range is from Guatemala to Guayana, but has been documented as far south as Bolivia.",
+            "length": 286,
+            "length type": "short",
+            "prompt name": "Eriophora nephiloides is ..."
+        },
+        {
+            "paragraph": "In 3D computer graphics, Phong shading, Phong interpolation, or normal-vector interpolation shading is an interpolation technique for surface shading invented by computer graphics pioneer Bui Tuong Phong. Phong shading interpolates surface normals across rasterized polygons and computes pixel colors based on the interpolated normals and a reflection model. Phong shading may also refer to the specific combination of Phong interpolation and the Phong reflection model.",
+            "length": 470,
+            "length type": "average",
+            "prompt name": "In 3D computer graphics, ..."
+        },
+        {
+            "paragraph": "Thetin-homocysteine S-methyltransferase (EC 2.1.1.3) is an enzyme that catalyzes the chemical reaction  The two substrates of this enzyme are sulfobetaine and L-homocysteine. A methyl group is transferred and the products are (methylthio)acetic acid and L-methionine. This enzyme belongs to the family of transferases, specifically those transferring one-carbon group methyltransferases. The systematic name of this enzyme class is dimethylsulfonioacetic acid:L-homocysteine S-methyltransferase. Other names in common use include dimethylthetin-homocysteine methyltransferase, and thetin-homocysteine methylpherase.",
+            "length": 616,
+            "length type": "average",
+            "prompt name": "Thetin-homocysteine S-met..."
+        },
+        {
+            "paragraph": "Vernacular culture is the cultural forms made and organised by ordinary, often indigenous people, as distinct from the high culture of an elite. One feature of vernacular culture is that it is informal. Such culture is generally engaged in on a non-profit and voluntary basis; it irarelyer funded by the state. The term is used in the modern study of geography and cultural studies. It generally implies a cultural form that differs markedly from deeply rooted folk culture, as well as from tightly organised subcultures and religious cultures. In cultural and communication studies, vernacular rhetoric is the discursive aspect of vernacular culture, referring to \"mundane, bottom-up, and informal discursive expressions that challenge and criticize the institutional\".",
+            "length": 770,
+            "length type": "average",
+            "prompt name": "Vernacular culture is the..."
+        },
+        {
+            "paragraph": "The Australian Artificial Intelligence Institute (Australian AI Institute, AAII, or A2I2) was a government-funded research and development laboratory for investigating and commercialising artificial intelligence (AI), specifically intelligent software agents, from 1988 until 1999. Among its software and commercial projects which were produced by the AAII were a procedural reasoning system (PRS); distributed multi-agent reasoning system (dMARS); and a Smart Whole AiR Mission Model (SWARMM).",
+            "length": 494,
+            "length type": "average",
+            "prompt name": "The Australian Artificial..."
+        },
+        {
+            "paragraph": "The 2024 ITF World Tennis Tour Tyler is a professional tennis tournament played on outdoor hard courts. It was the ninth edition of the tournament which was part of the 2024 ITF Women's World Tennis Tour. It took place in Tyler, Texas, United States between 21 and 27 October 2024.",
+            "length": 281,
+            "length type": "short",
+            "prompt name": "The 2024 ITF World Tennis..."
+        },
+        {
+            "paragraph": "The Pitheciidae () are one of the five families of New World monkeys now recognised. Formerly, they were included in the family Atelidae. The family includes the titis, saki monkeys and uakaris. Most species are native to the Amazon region of Brazil, with some being found from Colombia in the north to Bolivia in the south.",
+            "length": 324,
+            "length type": "short",
+            "prompt name": "The Pitheciidae () are on..."
+        },
+        {
+            "paragraph": "Jolly Tavoro Nyame (born 25 December 1955) is a Nigerian politician who served as the governor of Taraba State from 1999 to 2007. He previously served as governor from 1992 to 1993 during the short lived third republic.",
+            "length": 219,
+            "length type": "shortest",
+            "prompt name": "Jolly Tavoro Nyame (born ..."
+        },
+        {
+            "paragraph": "\"In the Flesh\" is a song by American band Blondie and their first to chart. Originally from the band's self-titled debut album, Blondie, the song was Blondie's second and final single on the Private Stock label.",
+            "length": 211,
+            "length type": "shortest",
+            "prompt name": "\"In the Flesh\" is a song ..."
+        },
+        {
+            "paragraph": "Parmotrema afrocetratum is a species of saxicolous (rock-dwelling) foliose lichen in the family Parmeliaceae. Described as new to science in 2005, it is found in Rwanda. It forms broad, leaf-like rosettes up to 10 cm across with grey-green upper surfaces and black undersides, growing directly on rock surfaces in landscaped areas at about 1750 metres elevation. The species is distinguished from similar lichens by its smooth margins without hair-like extensions and its distinctive flask-shaped reproductive spores.",
+            "length": 517,
+            "length type": "average",
+            "prompt name": "Parmotrema afrocetratum i..."
+        },
+        {
+            "paragraph": "Superhero fiction is a subgenre of speculative fiction showcasing the adventures of costumed crime-fighters known as superheroes, who often possess superhuman powers and battle similarly powered criminals known as supervillains. The genre primarily falls between hard fantasy and soft science fiction in the spectrum of scientific realism, often merging into science fantasy. It is most commonly associated with comic books, though it has expanded into other media through adaptations and original works.",
+            "length": 504,
+            "length type": "average",
+            "prompt name": "Superhero fiction is a su..."
+        },
+        {
+            "paragraph": "Like other aspects of the culture of Africa, the architecture of Africa is exceptionally diverse. Throughout the history of Africa, Africans have developed their own local architectural traditions. In some cases, broader regional styles can be identified, such as the Sudano-Sahelian architecture of West Africa. A common theme in traditional African architecture is the use of fractal scaling: small parts of the structure tend to look similar to larger parts, such as a circular village made of circular houses. African architecture in some areas has been influenced by external cultures for centuries, according to available evidence. Western architecture has influenced coastal areas since the late 15th century and is now an important source of inspiration for many larger buildings, particularly in major cities. African architecture uses a wide range of materials, including thatch, stick/wood, mud, mudbrick, rammed earth, and stone. These material preferences vary by region: North Africa for stone and rammed earth, the Horn of Africa for stone and mortar, West Africa for mud/adobe, Central Africa for thatch/wood and more perishable materials, Southeast and Southern Africa for stone and thatch/wood. Author Binyavanga Wainaina argues that people from the west would portray Africa as a decrepit and barren land and had failed to look at the wonders of the continent.",
+            "length": 1379,
+            "length type": "long",
+            "prompt name": "Like other aspects of the..."
+        },
+        {
+            "paragraph": "We Are the Flesh (Spanish: Tenemos la carne) is a 2016 Mexican-French horror film that was written and directed by Emiliano Rocha Minter. The film premiered on 2 February 2016 at the International Film Festival Rotterdam and had a limited release in the United States in January 2017.",
+            "length": 284,
+            "length type": "short",
+            "prompt name": "We Are the Flesh (Spanish..."
+        },
+        {
+            "paragraph": "South Sydney High School is a public school in Maroubra, Sydney, Australia. Established in 1953 as a boys high school, it is today a co-educational high school operated by the New South Wales Department of Education for students from Year 7 to Year 12. It primarily serves those coming from South Eastern Sydney and the Eastern Suburbs regions.",
+            "length": 344,
+            "length type": "short",
+            "prompt name": "South Sydney High School ..."
+        },
+        {
+            "paragraph": "Mark Edward Brennan (born February 6, 1947) is an American Catholic prelate who served as bishop of Wheeling-Charleston in West Virginia from 2019 to 2026. He previously served as an auxiliary bishop of the Archdiocese of Baltimore from 2017 to 2019.",
+            "length": 250,
+            "length type": "short",
+            "prompt name": "Mark Edward Brennan (born..."
+        },
+        {
+            "paragraph": "Security market line (SML) is the representation of the capital asset pricing model. It displays the expected rate of return of an individual security as a function of systematic, non-diversifiable risk. The risk of an individual risky security reflects the volatility of the return from the security rather than the return of the market portfolio. The risk in these individual risky securities reflects the systematic risk.",
+            "length": 424,
+            "length type": "average",
+            "prompt name": "Security market line (SML..."
+        },
+        {
+            "paragraph": "The British Aircraft Corporation TSR-2 was a cancelled supersonic strike and reconnaissance aircraft designed by the British Aircraft Corporation (BAC). It was under development throughout the late 1950s and early 1960s for the Royal Air Force (RAF); the TSR-2 designation came from \"Tactical Strike and Reconnaissance, Mach 2\". The TSR-2 arose from the issuing of General Operational Requirement 339 (GOR.339) in November 1956, which sought a successor to the English Electric Canberra that would perform both conventional and tactical nuclear weapons delivery, be able to penetrate well-defended frontline areas at low altitudes and very high speeds, and attack high-value targets in rear areas. Another intended combat role was to provide high-altitude, high-speed stand-off, side-looking radar and photographic imagery and signals intelligence, aerial reconnaissance. On 1 January 1959, the project received its official go-ahead; early work was undertaken by Vickers-Armstrong in cooperation with English Electric, before Britain's aircraft industry underwent consolidation to create BAC. However, as some contributing manufacturers were employed directly by the Ministry rather than through BAC, this led to communication difficulties and cost overruns. On 27 September 1964, test pilot Roland Beamont performed the type's maiden flight. Only one example flew and test flights and weight increases during design indicated that the aircraft would be unable to meet its original stringent design specifications. The design specifications were reduced as the result. The decision to cancel the TSR-2 programme came about out of ever-rising costs and inter-service rivalry over Britain's future defence needs. It was decided to order an adapted version of the General Dynamics F-111 instead, but that decision was also later rescinded as costs and development times of that aircraft increased as well. Operationally, the roles intended for the TSR-2 were taken up by other aircraft, such as the Blackburn Buccaneer and McDonnell Douglas F-4 Phantom II, both of which had been considered and rejected early in the TSR-2 procurement process. Eventually, the smaller swing-wing Panavia Tornado was developed by a European consortium and introduced during the 1980s to fulfil broadly similar requirements to the TSR-2.",
+            "length": 2316,
+            "length type": "longest",
+            "prompt name": "The British Aircraft Corp..."
+        },
+        {
+            "paragraph": "Parliamentary elections were held in South Ossetia on 12 May 1999. They were the third elections in the then unrecognized state since its de facto independence following the First South Ossetia War and the first elections after the territory became a semi-presidential republic with a new constitution ratified on 27 November 1996. Prior to this, South Ossetia had no executive branch of government, and the Speaker of Parliament was the head of state.",
+            "length": 452,
+            "length type": "average",
+            "prompt name": "Parliamentary elections w..."
+        },
+        {
+            "paragraph": "The Mermaid Reef Marine Park (previously known as the Mermaid Reef Marine National Nature Reserve) is an Australian marine park in the Rowley Shoals, located approximately 280 kilometres (170 mi) north-west of Broome, Western Australia. The marine park covers an area of 540 km2 (210 sq mi) and is assigned IUCN category II. It is one of 13 parks managed under the North-west Marine Parks Network, and lies adjacent to the Argo-Rowley Terrace Marine Park",
+            "length": 454,
+            "length type": "average",
+            "prompt name": "The Mermaid Reef Marine P..."
+        },
+        {
+            "paragraph": "Female bodybuilding is the female component of competitive bodybuilding.  It began in the late 1970s, when women began to take part in bodybuilding competitions. The most prestigious titles in female professional bodybuilding include the Ms. Olympia, Ms. Rising Phoenix and Masters Olympia.",
+            "length": 290,
+            "length type": "short",
+            "prompt name": "Female bodybuilding is th..."
+        },
+        {
+            "paragraph": "The Northrop Grumman RQ-180 is an American stealth unmanned aerial vehicle (UAV) surveillance aircraft intended for contested airspace. While there has been no official confirmation as of 2026, evidence points to the existence of the RQ-180 and its use in regular front-line service.",
+            "length": 283,
+            "length type": "short",
+            "prompt name": "The Northrop Grumman RQ-1..."
+        },
+        {
+            "paragraph": "Torrent of Portyngale (archaic spelling for \"Portugal\") is a Middle English romance, composed around 1400, probably in the north Midlands. It is written in 12-line tail-rhyme stanzas, with the rhyme scheme AABCCBDDBEEB, and is number 983 in the Index of Middle English Verse. It is possible that it draws some inspiration from the Middle English Sir Eglamour of Artois. The romance survives only in the fifteenth-century East-Midland manuscript Manchester, Chetham's Library, MS 8009 (folios 76r-119v). The romance describes the tortuous efforts of the young earl's son Torrent to win the hand of Desonell, daughter of King Colomond of Portugal, against her father's wishes. Amongst other feats, Torrent fights five giants on different occasions and travels to Jerusalem. The romance ends with Torrent and Desonell's marriage and the uniting of their family. It has been characterised as 'perhaps the most critically neglected member of the Middle English verse romances'.",
+            "length": 972,
+            "length type": "average",
+            "prompt name": "Torrent of Portyngale (ar..."
+        },
+        {
+            "paragraph": "The Hunter River, informally nicknamed the \"River Clyde\", is a Canadian river in northwestern Queens County, Prince Edward Island. From its source near Hartsville, the river flows northerly, becoming a tidal estuary at New Glasgow, an arm of Rustico Bay which gradually widens to approximately 750 metres (2,460 ft) wide. It discharges into the Gulf of St Lawrence. The river's total meander length is about 13 kilometres (8 mi), with an additional 8 kilometres (5 mi) of estuary. The river runs through the communities of Hunter River, New Glasgow and North Rustico. There was at one time a ferry at Hunter River and the river was dammed in at least two locations to power mills. The headponds are still in existence. The watershed covers approximately 9,000 hectares (22,000 acres). The local Hunter-Clyde Watershed Group was established in 2000 to improve and maintain the health of the watershed's ecosystem.",
+            "length": 912,
+            "length type": "average",
+            "prompt name": "The Hunter River, informa..."
+        },
+        {
+            "paragraph": "South Africa competed at the 2025 World Games held in Chengdu, China from 7 to 17 August 2025. Athletes representing South Africa won three silver medals and the country finished in 57th place in the medal table",
+            "length": 211,
+            "length type": "shortest",
+            "prompt name": "South Africa competed at ..."
+        },
+        {
+            "paragraph": "Bruce Allen Murphy is an American judicial biographer and scholar of constitutional law and politics. He is the Fred Morgan Kirby Professor of Civil Rights at Lafayette College in Easton, Pennsylvania, a position he has held since 1998. Prior to that appointment, he was a professor of Political Science and a professor of American History and Politics at Pennsylvania State University.",
+            "length": 386,
+            "length type": "average",
+            "prompt name": "Bruce Allen Murphy is an ..."
+        },
+        {
+            "paragraph": "Capstone Farm Country Park is in Chatham, Kent, Medway, in Kent, England. A former farm converted into a landscaped park and open-space area. This park is set on 114 hectares (281.694 acres (1,139,980 m2)) of converted farm land, on the North Downs, near Walderslade. It is within the Kent Downs, an Area of Outstanding Natural Beauty.",
+            "length": 335,
+            "length type": "short",
+            "prompt name": "Capstone Farm Country Par..."
+        },
+        {
+            "paragraph": "Burarie County is a cadastral division of Queensland and a county of the South Gregory District of remote western Queensland.  The county is divided into civil  parishes. The county came into existence in the 19th century, but on 8 March 1901, when the Governor of Queensland issued a proclamation legally dividing Queensland into counties under the Land Act 1897. Like all counties in Queensland, it is a non-functional administrative unit, that is used mainly for the purpose of registering land titles. From 30 November 2015, the government no longer referenced counties and parishes in land information systems however the Museum of Lands, Mapping and Surveying retains a record for historical purposes.",
+            "length": 707,
+            "length type": "average",
+            "prompt name": "Burarie County is a cadas..."
+        },
+        {
+            "paragraph": "The Black Echo is the 1992 debut novel by American crime author Michael Connelly. It is the first book in Connelly's series centered on Los Angeles Police Department homicide detective Harry Bosch. The book won the Mystery Writers of America Edgar Award for \"Best First Novel\" in 1992.",
+            "length": 285,
+            "length type": "short",
+            "prompt name": "The Black Echo is the 199..."
+        },
+        {
+            "paragraph": "Marion is a city in and the county seat of Marion County, Kansas, United States.  As of the 2020 census, the population of the city was 1,922.  The city was named in honor of Francis Marion, a brigadier general of the American Revolutionary War, known as the \"Swamp Fox\".",
+            "length": 271,
+            "length type": "short",
+            "prompt name": "Marion is a city in and t..."
+        },
+        {
+            "paragraph": "\"Forever as One\" is a song by Dutch eurodance group Vengaboys released in 2001. It charted at number 28 in the UK Singles Chart, making it their worst performing single. It was also their last release before temporarily disbanding and returning to the club scene. The music video has a cameo appearance of pop band Westlife and another of Jimmy Pop. The inclusion of Westlife was not approved of by their record label, forcing a second edit of the video to be created which excluded the footage of them. This song is unusual as it is a ballad as opposed to the usual dance type track of which the Vengaboys are best known for.",
+            "length": 626,
+            "length type": "average",
+            "prompt name": "\"Forever as One\" is a son..."
+        },
+        {
+            "paragraph": "Drexel Park station (also known as Fairfax Road) is a SEPTA Metro D stop in Drexel Hill, Pennsylvania. It is located on Fairfax Road between Hillcrest and Garrett Roads and serves both the D1 and D2. Only local service is provided on both lines. Trolleys arriving at this station travel between 69th Street Transit Center in Upper Darby Township, Pennsylvania and either Orange Street in Media, Pennsylvania for the D1, or Sharon Hill, Pennsylvania for the D2. Despite the name, the closest thing to a park at this stop is located further north at Arlington Cemetery of Drexel Hill. Because the stop is in a residential area, there is no parking available. This community was named as one of the top ten neighborhoods in the Philadelphia area by PhillyMag.com.",
+            "length": 760,
+            "length type": "average",
+            "prompt name": "Drexel Park station (also..."
+        },
+        {
+            "paragraph": "William Arthur Roger Mullin (born 12 March 1948) is a former Scottish National Party (SNP) politician. He was the Member of Parliament (MP) for Kirkcaldy and Cowdenbeath from May 2015, until being defeated at the 2017 snap general election.",
+            "length": 240,
+            "length type": "shortest",
+            "prompt name": "William Arthur Roger Mull..."
+        },
+        {
+            "paragraph": "Paco's Story is 1987 novel by Larry Heinemann. The novel is his second and it won the 1987 U.S. National Book Award for Fiction in a major surprise that has remained controversial. In particular, the New York Times was surprised by the win, soliciting commentary from other critical reviewers, like the LA Times.",
+            "length": 312,
+            "length type": "short",
+            "prompt name": "Paco's Story is 1987 nove..."
+        },
+        {
+            "paragraph": "The 1905 South Atlantic League was a Class C baseball season played between April 19 and September 16. Six teams played a 130-game schedule, with the top team winning the pennant. The Macon Brigands won the South Atlantic League championship, as they finished the regular season in first place.",
+            "length": 294,
+            "length type": "short",
+            "prompt name": "The 1905 South Atlantic L..."
+        },
+        {
+            "paragraph": "The Pooled Finance Development Fund Scheme (PFDF) has been set up by the Central Government of India. The main aim of the Government authorities is to provide credit enhancement facilities to Urban Local Bodies (ULBs) based on their credit worthiness. This will enable them to access market borrowings through state-level pooled mechanism. PFDF is to ensure availability of resources to Urban Local Bodies in order to improve urban infrastructure and ultimately attain the goal of self-sustainability.",
+            "length": 501,
+            "length type": "average",
+            "prompt name": "The Pooled Finance Develo..."
+        },
+        {
+            "paragraph": "The United States competed at the 2022 Winter Olympics in Beijing, China, from February 4 to 20, 2022. On January 24, 2022, the United States Olympic & Paralympic Committee named a team of 224 athletes. Curler John Shuster and speed skater Brittany Bowe were named U.S. flagbearers for the opening ceremony. Bobsledder Elana Meyers Taylor was named flagbearer for the closing ceremony. The United States won nine gold and 25 medals overall at the 2022 Winter Olympics, finishing third in the medal standings, an improvement from fourth in the previous two Winter Olympics and matching the gold medal totals from the four previous Games. Notable successes included Jessie Diggins becoming the first American female skier to win individual cross-country medals, figure skater Nathan Chen breaking the short program world record en route to the Olympic gold medal in the men's singles, Erin Jackson becoming the first Black female athlete of any country to win an Olympic gold (in speed skating), and Chloe Kim defending her title in the snowboarding women's halfpipe. Veteran snowboarder Lindsey Jacobellis, who last medaled at the 2006 Winter Olympics in Turin, was one of just two U.S. athletes with multiple gold medals, winning the women's snowboard cross event, and sharing the gold with teammate Nick Baumgartner in the mixed snowboard cross event. Figure skater Nathan Chen won gold in both the team and individual men's events. Kaillie Humphries won gold in women's monobob, with the event having made its debut at these games.",
+            "length": 1533,
+            "length type": "long",
+            "prompt name": "The United States compete..."
+        },
+        {
+            "paragraph": "Felicity Anne Goodyear-Smith (born 1952) is a medical doctor, academic, and public health advocate from New Zealand.  She is  Academic Head of Department & Goodfellow Postgraduate Chair of General Practice & Primary Health Care in the Faculty of Medical and Health Science at the University of Auckland, New Zealand.",
+            "length": 316,
+            "length type": "short",
+            "prompt name": "Felicity Anne Goodyear-Sm..."
+        },
+        {
+            "paragraph": "Muzamir Semuddu (born 23 April 2003) is a Ugandan boxer who has competed at national and international level. He captained the Uganda national boxing team at the 13th African Games in Accra, Ghana, where he reached the semifinals and won a bronze medal.",
+            "length": 253,
+            "length type": "short",
+            "prompt name": "Muzamir Semuddu (born 23 ..."
+        },
+        {
+            "paragraph": "The Edinburgh International Exhibition Tournament was an open men's and women's tennis staged only one time in 1886. The tournament was part of the sports event programmes played at the International Exhibition of Industry, Science and Art, in Edinburgh, Midlothian, Scotland.",
+            "length": 276,
+            "length type": "short",
+            "prompt name": "The Edinburgh Internation..."
+        },
+        {
+            "paragraph": "Schendylops oligopus is a species of soil centipede in the family Schendylidae. This species is notable as one of only two species in the order Geophilomorpha known to include centipedes with only 27 pairs of legs, the minimum number recorded in this order. Furthermore, S. oligopus was the first species in this order found to feature so few legs.",
+            "length": 348,
+            "length type": "short",
+            "prompt name": "Schendylops oligopus is a..."
+        },
+        {
+            "paragraph": "BNS Somudra Joy is one of the two largest ships of the Bangladesh Navy along with her sister ship BNS Somudra Avijan. Although originally a high endurance cutter the Bangladesh Navy reclassified the ship as a frigate. They acquired the ship from the United States under Excess Defense Articles. Currently she is being used as a training ship for naval cadets.",
+            "length": 359,
+            "length type": "average",
+            "prompt name": "BNS Somudra Joy is one of..."
+        },
+        {
+            "paragraph": "Wet 'n Wild was a 27-acre (11 ha) water park located at 2601 South Las Vegas Boulevard on the Las Vegas Strip in Winchester, Nevada. The $14 million water park opened on May 18, 1985, as a joint venture between Howard Hughes Development Corporation and Wet 'n Wild. A number of ownership changes occurred beginning in 1998. It was eventually sold to Palace Entertainment in 2002. However, the land itself was leased throughout the water park's history. In 2003, plans were announced to end the lease in favor of redeveloping the site. Wet 'n Wild closed on September 26, 2004, although several proposed projects for the site have failed to materialize, including a skyscraper resort known as Crown Las Vegas and the All Net Resort & Arena.",
+            "length": 739,
+            "length type": "average",
+            "prompt name": "Wet 'n Wild was a 27-acre..."
+        },
+        {
+            "paragraph": "Mkhombo Nature Reserve is a protected area in Mpumalanga, South Africa. It is a large, 11,223 ha reserve which conserves an easterly Kalahari thornveld environment around the shores of Mkhombo Dam. The reserve has typical highland grassland with a network of wetlands and rocky outcrops. The nature reserve is known for its bird life. Among the species native to the reserve are the reed cormorant, African yellow-billed hornbill, African grey hornbill, white-breasted cormorant, little swift, hamerkop, red-winged starling, pectoral sandpiper, grey plover, barred wren-warbler, and yellow wagtail. It is a frequent safari destination for visitors from around the world. Species found in the reserve include elephants, lions, leopards, cheetahs, buffaloes, rhinoceroses, hippopotamuses, and several antelope species.",
+            "length": 816,
+            "length type": "average",
+            "prompt name": "Mkhombo Nature Reserve is..."
+        },
+        {
+            "paragraph": "In mining, tailings or tails are the materials left over after the process of separating the valuable fraction from the uneconomic fraction (gangue) of an ore. Tailings are different from overburden, which is the waste rock or other material that overlies an ore or mineral body and is displaced during mining without being processed. Waste valorization is the evaluation of waste and residues from an economic process in order to determine their value in reuse or recycling, as what was gangue at the time of separation may increase with time or more sophisticated recovery processes. The extraction of minerals from ore can be done two ways: placer mining, which uses water and gravity to concentrate the valuable minerals, or hard rock mining, which pulverizes the rock containing the ore and then relies on chemical reactions to concentrate the sought-after material. In the latter, the extraction of minerals from ore requires comminution, i.e., grinding the ore into fine particles to facilitate extraction of the target element(s). Because of this comminution, tailings consist of a slurry of fine particles, ranging from the size of a grain of sand to a few micrometres. Mine tailings are usually produced from the mill in slurry form, which is a mixture of fine mineral particles and water. Tailings are likely to be dangerous sources of toxic chemicals such as heavy metals, sulfides, and radioactive content. These chemicals are especially dangerous when stored in water in ponds behind tailings dams. These ponds are also vulnerable to major breaches or leaks from the dams, causing environmental disasters, such as the Mount Polley disaster in British Columbia. Because of these and other environmental concerns such as groundwater leakage, toxic emissions and bird death, tailing piles and ponds have received more scrutiny, especially in developed countries, but the first UN-level standard for tailing management was only established 2020. There are a wide range of methods for recovering economic value, containing, or otherwise mitigating the impacts of tailings. However, internationally, these practices are poor, sometimes violating human rights.",
+            "length": 2167,
+            "length type": "longest",
+            "prompt name": "In mining, tailings or ta..."
+        },
+        {
+            "paragraph": "The University of Gadarif (also called Gedaref, Gedarif or El Gadarif) is a public university in the town of Al Qadarif, capital of the state of Al Qadarif in Sudan. The university was founded in 1990. Faculties include Medicine and Health Sciences, Computer Science and Information Technology, Economics and Administrative Sciences,  Agricultural and Environmental, Education and Sharia and Islamic Studies. The university is a member of the Federation of the Universities of the Islamic World and the Foundation for Advancement of international Medical Education and Research (FAIMER).",
+            "length": 587,
+            "length type": "average",
+            "prompt name": "The University of Gadarif..."
+        },
+        {
+            "paragraph": "Langeid is a village in Bygland municipality in Agder county, Norway. The village is located in the northern part of the municipality, along the river Otra and the Norwegian National Road 9, about halfway between the villages of Tveit (in Bygland) and Besteland (in neighboring Valle).",
+            "length": 285,
+            "length type": "short",
+            "prompt name": "Langeid is a village in B..."
+        },
+        {
+            "paragraph": "The Duellists is a 1977 British historical drama film which is the directorial debut of Ridley Scott. Set in France during the Napoleonic Wars, the film focuses on a series of duels between two rival officers, the obsessive Bonapartist Gabriel Feraud (played by Harvey Keitel) and royalist Armand d'Hubert (Keith Carradine), that spans nearly 20 years and reflects the political tumult of early 19th-century France. The film is based on Joseph Conrad's 1908 short story \"The Duel\". The Duellists unanimously won the award for Best Debut Film at the 1977 Cannes Film Festival, and was nominated for the Palme d'Or. The Duellists earned widespread acclaim from critics, who praised Scott's direction and visuals, and the film's historical authenticity. The fight choreography, by master swordsman William Hobbs, is considered one of the most accurate depictions of dueling in cinema. At the 32nd British Academy Film Awards, the film received nominations for Best Cinematography and Best Costume Design.",
+            "length": 1001,
+            "length type": "long",
+            "prompt name": "The Duellists is a 1977 B..."
+        },
+        {
+            "paragraph": "Chris Bachalo (; born August 23, 1965) is a Canadian comic book illustrator known for his quirky, cartoon-like style. He became well known for stints on DC Comics' Shade, the Changing Man and Neil Gaiman's two Death series. Chris has also illustrated several of Marvel Comics' X-Men-related series, including Generation X (which he co-created), X-Men, Uncanny X-Men, and Ultimate X-Men. Beginning in April 2000 Chris illustrated his creator-owned series Steampunk.",
+            "length": 464,
+            "length type": "average",
+            "prompt name": "Chris Bachalo (; born Aug..."
+        },
+        {
+            "paragraph": "Nadadores is one of the 38 municipalities of Coahuila, in north-eastern Mexico. The municipal seat lies at Nadadores. The municipality covers an area of 834.7 km2. As of 2005, the municipality had a total population of 5,822.",
+            "length": 225,
+            "length type": "shortest",
+            "prompt name": "Nadadores is one of the 3..."
+        },
+        {
+            "paragraph": "Argyrophis oatesii, also known commonly as the Andaman Island worm snake or Oates's blind snake, is a species of harmless snake in the family Typhlopidae. The species is endemic to the Andaman Islands. There are no subspecies that are recognized as being valid.",
+            "length": 261,
+            "length type": "short",
+            "prompt name": "Argyrophis oatesii, also ..."
+        },
+        {
+            "paragraph": "Gallieniella is a genus of East African araneomorph spiders in the family Gallieniellidae, and was first described by J. Millot in 1947. Originally placed with the sac spiders, it was moved to the Gallieniellidae in 1967.",
+            "length": 221,
+            "length type": "shortest",
+            "prompt name": "Gallieniella is a genus o..."
+        },
+        {
+            "paragraph": "Technical Higher Secondary School, Vattamkulam is a secondary school in Vattamkulam, Malappuram district, Kerala. THSS Vattamkulam Managed by IHRD is located at Nellyssery, Vattamkulam near Naduvattam, Edappal Malappuram.",
+            "length": 221,
+            "length type": "shortest",
+            "prompt name": "Technical Higher Secondar..."
+        }
+    ]
+}
