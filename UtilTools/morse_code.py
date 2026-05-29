@@ -15,21 +15,23 @@ class MorseCodeFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
+        self.MAIN_FONT = ctk.CTkFont(family="Helvetica", size=16)
+
         self.grid_rowconfigure(1, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
-        self.entry = ctk.CTkEntry(self, placeholder_text="Your Text Here")
+        self.entry = ctk.CTkEntry(self, placeholder_text="Your Text Here", font=self.MAIN_FONT)
         self.entry.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
 
-        enter_button = ctk.CTkButton(self, text="Convert", command=self.convert_entry)
+        enter_button = ctk.CTkButton(self, text="Convert", command=self.convert_entry, font=self.MAIN_FONT)
         enter_button.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
 
         self.current_converted_entry = ctk.CTkTextbox(self)
-        self.current_converted_entry.configure(state="disabled")
+        self.current_converted_entry.configure(state="disabled", font=self.MAIN_FONT)
         self.current_converted_entry.grid(row=1, column=0, padx=20, pady=20, sticky="nsew")
 
         self.all_entries = ctk.CTkTextbox(self)
-        self.all_entries.configure(state="disabled")
+        self.all_entries.configure(state="disabled", font=self.MAIN_FONT)
         self.all_entries.grid(row=1, column=1, padx=20, pady=20, sticky="nsew")
 
     def convert_entry(self):
