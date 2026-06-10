@@ -206,7 +206,7 @@ class TypingTestFrame(ctk.CTkFrame):
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure(2, weight=1)
 
-        self.scl_time = ctk.CTkLabel(self, text=f"time (in seconds): {self.time}", fg_color="transparent", font=self.SCORE_FONT)
+        self.scl_time = ctk.CTkLabel(self, text=f"time: {self.time}", fg_color="transparent", font=self.SCORE_FONT)
         self.scl_time.grid(row=1, column=0, padx=20, pady=20, sticky="nsew")
 
         self.scl_mistakes = ctk.CTkLabel(self, text=f"mistakes: {self.mistakes}", fg_color="transparent", font=self.SCORE_FONT)
