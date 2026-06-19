@@ -1,6 +1,6 @@
 ## 100 Days of Code Capstone
 
-At the end of 100 Days of Code™: The Complete Python Pro Bootcamp by Dr. Angela Yu, students complete a series of independent capstone projects. Because my career goals focus strictly on back-end logic, software engineering, and data analytics, I tailored my portfolio exclusively to the pure Python projects. I completed but omitted the web development modules (HTML, CSS, and JavaScript) to maximize my portfolio's focus on programming logic, automation, and data manipulation. Additionally I refactored and upgraded several of these projects specifically for this portfolio. Making completely new concepts and scripts, and going beyond what was taught in the bootcamp for many of them.
+At the end of the 100 Days of Code™: The Complete Python Pro Bootcamp by Dr. Angela Yu, students complete a series of independent capstone projects. Because my career goals focus strictly on back-end logic, software engineering, and data analytics, I tailored my portfolio exclusively to the pure Python projects. I completed but omitted the web development modules (HTML, CSS, and JavaScript) to maximize my portfolio's focus on programming logic, automation, and data manipulation. Additionally I refactored and upgraded several of these projects specifically for this portfolio. Making completely new concepts and scripts, and going beyond what was taught in the bootcamp for many of them.
 
 The resulting project consists of four distinct programs:
 - Financial Impact on Shelters
