@@ -28,8 +28,8 @@ class TabView(ctk.CTkTabview):
         self.morse_code_frame = MorseCodeFrame(master=self.tab("Morse Code Generator"))
         self.morse_code_frame.pack(fill="both", expand=True)
 
-        self.colors__frame = ColorsFrame(master=self.tab("Color From Image"))
-        self.colors__frame.pack(fill="both", expand=True)
+        self.colors_frame = ColorsFrame(master=self.tab("Color From Image"))
+        self.colors_frame.pack(fill="both", expand=True)
 
         self.watermark_frame = WatermarkFrame(master=self.tab("Watermark Image"))
         self.watermark_frame.pack(fill="both", expand=True)
@@ -39,7 +39,7 @@ class UtilityApp(ctk.CTk):
         super().__init__()
 
         self.geometry("1500x1000")
-        self.title("Utility App")
+        self.title("Utility Tools")
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
