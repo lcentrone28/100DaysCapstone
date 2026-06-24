@@ -16,4 +16,4 @@ I use draw.io to make flow charts for my programs before doing anything else. I 
 
 ![100 Days of Code Capstone Flowchart](./100DFPFlow.drawio.svg)
 
-This diagram serves as the initial architectural blueprint mapped out prior to coding. The final production scripts may include optimizations, refactored logic, or structural adjustments that diverge from this initial layout.
+This diagram serves as the initial architectural blueprint mapped out prior to coding. The final production scripts include optimizations, refactored logic, and structural adjustments that diverge from this initial layout.

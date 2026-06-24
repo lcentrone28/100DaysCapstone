@@ -3,7 +3,6 @@ import json
 import os
 import datetime
 
-from goals import GoalsFrame
 from gratitude import GratitudeFrame
 from moods import MoodsFrame
 from to_do import ToDoFrame
@@ -15,23 +14,18 @@ class TabView(ctk.CTkTabview):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
+        self.add("To Do List")
         self.add("Gratitude Journal")
         self.add("Mood Tracker")
-        self.add("Goals Tracker")
-        self.add("To Do List")
+
+        self.to_do_frame = ToDoFrame(master=self.tab("To Do List"))
+        self.to_do_frame.pack(fill="both", expand=True)
 
         self.gratitude_frame = GratitudeFrame(master=self.tab("Gratitude Journal"))
         self.gratitude_frame.pack(fill="both", expand=True)
 
         self.moods_frame = MoodsFrame(master=self.tab("Mood Tracker"))
         self.moods_frame.pack(fill="both", expand=True)
-
-        self.goals_frame = GoalsFrame(master=self.tab("Goals Tracker"))
-        self.goals_frame.pack(fill="both", expand=True)
-
-        self.to_do_frame = ToDoFrame(master=self.tab("To Do List"))
-        self.to_do_frame.pack(fill="both", expand=True)
-
 
 class OrgApp(ctk.CTk):
     def __init__(self):
@@ -79,7 +73,6 @@ class OrgApp(ctk.CTk):
 
         return ('"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, '
                 'plans to give you hope and a future."\n— Jeremiah 29:11')
-
 
 if __name__ == "__main__":
     app = OrgApp()
