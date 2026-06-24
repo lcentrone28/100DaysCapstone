@@ -3,7 +3,6 @@ import json
 import os
 import datetime
 
-
 class ToDoFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
@@ -327,6 +326,41 @@ class ToDoFrame(ctk.CTkFrame):
             delete_button.pack(side="left", padx=4)
 
     def mark_as_complete(self, index):
+        popup = ctk.CTkToplevel(self)
+        popup.title("Rate Your Performance")
+        popup.geometry("400x500")
+        popup.attributes("-topmost", True)
+        popup.grid_columnconfigure(0, weight=1)
+
+        ctk.CTkLabel(popup, text="Rate Your Performance", font=("Arial", 14, "bold")).grid(row=0, column=0, pady=15)
+
+        scores = ["Importance", "Effort Required", "Time to Complete", "Amount Procrastinated"]
+        sliders = {}
+
+        for idx, score_name in enumerate(scores):
+            m_frame = ctk.CTkFrame(popup)
+            m_frame.grid(row=idx + 1, column=0, padx=20, pady=10, sticky="ew")
+            m_frame.grid_columnconfigure(1, weight=1)
+
+            lbl = ctk.CTkLabel(m_frame, text=f"{score_name}: 5", font=("Arial", 12, "bold"), width=150, anchor="w")
+            lbl.grid(row=0, column=0, padx=10, pady=5)
+
+            slider = ctk.CTkSlider(m_frame, from_=1, to=10, number_of_steps=9)
+            slider.set(5)
+            slider.grid(row=0, column=1, padx=10, pady=5, sticky="ew")
+
+            slider.configure(command=lambda val, l=lbl, m=score_name: l.configure(text=f"{m}: {int(val)}"))
+            sliders[score_name.lower().replace(" ", "_")] = slider
+
+        def calculate_and_route():
+            scores = {k: int(v.get()) for k, v in sliders.items()}
+            popup.destroy()
+            self.execute_completion_logic(index, scores)
+
+        ctk.CTkButton(popup, text="Finalize Rating", fg_color="#2cba00",
+                      command=calculate_and_route).grid(row=5, column=0, pady=20)
+
+    def execute_completion_logic(self, index, scores):
         if os.path.exists(self.DATA_FILE):
             try:
                 with open(self.DATA_FILE, "r") as f:
@@ -337,6 +371,43 @@ class ToDoFrame(ctk.CTkFrame):
             if 0 <= index < len(entries["current"]):
                 task = entries["current"].pop(index)
                 task["completed_at"] = datetime.datetime.now().strftime("%B %d, %Y - %I:%M %p")
+                task["user_scores"] = scores
+
+                importance = scores["importance"]
+                effort = scores["effort_required"]
+                time_spent = scores["time_to_complete"]
+                procrastination = scores["amount_procrastinated"]
+
+                is_late = procrastination >= 4
+                penalty_scale = (procrastination - 1) / 9.0
+                investment = effort + time_spent
+
+                if investment > 12:
+                    modifier = 1.3
+                elif investment < 8:
+                    modifier = 0.7
+                else:
+                    modifier = 1.0
+
+                rating = 7.0
+
+                if not is_late:
+                    if importance >= 8:
+                        rating += 2.0 * modifier
+                    elif importance >= 4:
+                        rating += 1.0 * modifier
+                else:
+                    if importance >= 8:
+                        rating -= (4.5 * penalty_scale) / modifier
+                    elif importance >= 4:
+                        rating -= (2.5 * penalty_scale) / modifier
+                    else:
+                        rating -= (1.0 * penalty_scale) / modifier
+
+                if procrastination > 1:
+                    rating -= (procrastination - 1) * 0.25
+
+                task["relative_score"] = round(max(1.0, min(10.0, rating)), 1)
 
                 if task.get("repeats") and task["repeats"] != "Does Not Repeat":
                     next_due = self._calculate_next_date(task.get("date", ""), task["repeats"], task)
@@ -408,7 +479,8 @@ class ToDoFrame(ctk.CTkFrame):
             card = ctk.CTkFrame(scroll_frame)
             card.pack(fill="x", padx=10, pady=5)
 
-            info_text = f"Task: {entry['content']}"
+            info_text = f"Task: {entry['content']}\nScore: {entry.get('relative_score', 'N/A')}/10"
+
             if entry.get('date') and entry['date'] != "No Deadline":
                 info_text += f"\nDue: {entry['date']}"
 
@@ -437,9 +509,29 @@ class ToDoFrame(ctk.CTkFrame):
             actions_container = ctk.CTkFrame(card, fg_color="transparent")
             actions_container.pack(side="right", padx=12)
 
+            inspect_button = ctk.CTkButton(actions_container, text="View Details", width=50, height=20, fg_color="gray40",
+                                           command=lambda e=entry: self.view_comp_goal_details(e))
+            inspect_button.pack(side="left", padx=4)
+
             delete_button = ctk.CTkButton(actions_container, text="Delete", width=50, height=20, fg_color="#d9534f",
                             hover_color="#c9302c", command=lambda idx=index: self.delete_to_do(idx, is_completed=True))
             delete_button.pack(side="left", padx=4)
+
+    def view_comp_goal_details(self, entry):
+        details_win = ctk.CTkToplevel(self)
+        details_win.title("Details")
+        details_win.geometry("340x260")
+        details_win.attributes("-topmost", True)
+
+        ctk.CTkLabel(details_win, text="Details", font=("Arial", 14, "bold")).pack(pady=10)
+
+        breakdown = entry.get("user_scores", {})
+        for key, val in breakdown.items():
+            clean_name = key.replace("_", " ").title()
+            ctk.CTkLabel(details_win, text=f"• {clean_name}: {val}/10", font=("Arial", 12)).pack(anchor="w", padx=40, pady=3)
+
+        ctk.CTkLabel(details_win, text=f"Overall Score: {entry.get('relative_score', 'N/A')}/10",
+                     font=("Arial", 12, "bold"), text_color="#2cba00").pack(pady=15)
 
     def delete_to_do(self, index, is_completed=False):
         if os.path.exists(self.DATA_FILE):
