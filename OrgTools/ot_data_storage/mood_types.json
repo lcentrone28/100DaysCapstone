@@ -1,0 +1,145 @@
+{
+  "//note": "I asked Gemini to give me 20 general moods and 5 specific moods for each (100 total) for this.",
+  "//": "I then asked for it to give me coordinating color schemes for these moods which I have put in mood_colors.json",
+
+  "Hyped": {
+    "Pumped": "Super excited and ready to tackle a challenge.",
+    "Thrilled": "Highly pleased and buzzing over a specific win.",
+    "Ecstatic": "Overjoyed to the point of pure excitement.",
+    "Amped": "Filled with a sudden, high-voltage burst of energy.",
+    "Eager": "Impatiently waiting to get started on something fun."
+  },
+  "Happy": {
+    "Glad": "Just feeling good about how things are going.",
+    "Cheerful": "Bright, smiling, and in a naturally good mood.",
+    "Great": "Feeling on top of things and highly positive.",
+    "Excited": "Hyped up and looking forward to something.",
+    "Content": "Totally satisfied and needing nothing else."
+  },
+  "Energized": {
+    "Energetic": "Full of physical life and a desire to move around.",
+    "Bouncy": "So full of energy you can't seem to sit still.",
+    "Restless": "Fidgety and needing to find something to do.",
+    "Wild": "Full of chaotic, high-energy fun.",
+    "Rowdy": "Loud, playful, and bursting with active energy."
+  },
+  "Proud": {
+    "Accomplished": "Satisfied after finishing a tough chore or goal.",
+    "Successful": "Feeling like your hard work really paid off.",
+    "Confident": "Sure of yourself and ready to stand tall.",
+    "Strong": "Feeling emotionally or physically tough and resilient.",
+    "Validated": "Feeling like your efforts were noticed and praised."
+  },
+  "Smart": {
+    "Focused": "Concentrating heavily on a single task or goal.",
+    "Sharp": "Thinking quickly and processing things fast.",
+    "Capable": "Feeling like you have the exact skills to handle life.",
+    "Bright": "Feeling clever, alert, and mentally quick.",
+    "Clever": "Finding quick, witty ways to figure out a problem."
+  },
+  "Loving": {
+    "Cared-For": "Feeling deeply valued, wanted, and protected.",
+    "Affectionate": "Wanting to show warmth, hugs, or kind words.",
+    "Close": "Feeling a strong, tight connection to someone.",
+    "Warm": "A gentle, fuzzy feeling of emotional comfort.",
+    "Adoring": "Filled with deep admiration and fondness."
+  },
+  "Helpful": {
+    "Kind": "Feeling warm, friendly, and generous toward others.",
+    "Caring": "Deeply concerned with making sure people are okay.",
+    "Friendly": "Open, welcoming, and easy to talk to.",
+    "Supportive": "Ready to back someone up and help them out.",
+    "Generous": "Happy to share your time, energy, or things."
+  },
+  "Hopeful": {
+    "Optimistic": "Confident that things will turn out well.",
+    "Encouraged": "Feeling better about a situation after a small win.",
+    "Eager": "Looking toward tomorrow with a positive attitude.",
+    "Inspired": "Feeling a spark of desire to try something new.",
+    "Reassured": "Feeling a sense of relief that everything will be fine."
+  },
+  "Chill": {
+    "Relaxed": "Free from any immediate stress or pressure.",
+    "Calm": "Quiet, peaceful, and emotionally steady.",
+    "Lazy": "Wanting to just lounge around and do nothing.",
+    "Mellow": "Soft, low-key, and moving at a slow pace.",
+    "Comfortable": "Perfectly at ease in your current space."
+  },
+  "Good": {
+    "Decent": "Things are going fine, nothing to complain about.",
+    "Okay": "A baseline, neutral feeling where life is steady.",
+    "Fine": "Comfortable and structurally solid, if a bit ordinary.",
+    "Alright": "Feeling safe, stable, and reasonably well.",
+    "Safe": "Feeling secure and free from any threats or worries."
+  },
+  "Bored": {
+    "Dull": "Life feels completely uninteresting and gray right now.",
+    "Listless": "Lacking any desire, energy, or interest to do stuff.",
+    "Apathetic": "Feeling a total shrug of \"I don't care\" about everything.",
+    "Restless": "Bored but possessing too much energy to sit still.",
+    "Blah": "Feeling entirely flat, empty, and uninspired."
+  },
+  "Tired": {
+    "Sleepy": "Heavy-eyed and ready to crash in bed immediately.",
+    "Exhausted": "Drained of all physical and mental battery.",
+    "Sluggish": "Moving, thinking, and reacting way slower than usual.",
+    "Drained": "Feeling like your energy was completely sucked away.",
+    "Worn-Out": "Feeling broken down by a long day or hard work."
+  },
+  "Confused": {
+    "Lost": "Having absolutely no idea what to do next.",
+    "Stuck": "Blocked by a problem you can't find an answer to.",
+    "Foggy": "Experiencing a mental haze that makes it hard to think.",
+    "Flustered": "Becoming messy and chaotic under sudden pressure.",
+    "Mixed-Up": "Getting facts, feelings, or details completely jumbled."
+  },
+  "Lonely": {
+    "Isolated": "Feeling completely cut off and alone in the world.",
+    "Left-Out": "Excluded from the fun things your peers are doing.",
+    "Forgotten": "Feeling like nobody is checking in or thinking of you.",
+    "Disconnected": "Sitting in a room with people but feeling zero bond.",
+    "Homesick": "Missing familiar places, comfort, and family routines."
+  },
+  "Annoyed": {
+    "Irritated": "Losing your patience over a small, repeating nuisance.",
+    "Frustrated": "Stuck and upset because you can't fix a problem.",
+    "Grouchy": "Bad-tempered, complaining, and easily bothered.",
+    "Bothered": "Feeling a persistent, nagging sense of discomfort.",
+    "Snappy": "Easily provoked into answering back sharply."
+  },
+  "Worried": {
+    "Nervous": "Anxious, shaky, and highly tense about an event.",
+    "Anxious": "A lingering, uneasy dread about what might happen.",
+    "Uneasy": "Lacking comfort or a sense of safety.",
+    "Jittery": "Shaky and totally on edge from tight nerves.",
+    "On-Edge": "Highly sensitive to noise and easily stressed out."
+  },
+  "Hurt": {
+    "Offended": "Feeling insulted, slighted, or disrespected.",
+    "Let-Down": "Disappointed by someone you trusted.",
+    "Crushed": "Deeply wounded by harsh words or rejection.",
+    "Bitter": "Resentful because a situation felt incredibly unfair.",
+    "Jealous": "Hurt and envious of what someone else has."
+  },
+  "Scared": {
+    "Afraid": "Feeling an immediate sense of danger or fright.",
+    "Terrified": "Completely frozen or panicked by intense fear.",
+    "Panicky": "Hit by sudden, overwhelming, and blinding worry.",
+    "Spooked": "Easily startled and jumped by small surprises.",
+    "Fearful": "Feeling constantly uneasy and threatened."
+  },
+  "Sad": {
+    "Down": "Just feeling low, heavy, and unmotivated.",
+    "Gloomy": "Feeling dark, rainy, and low-energy inside.",
+    "Heartbroken": "Crushed by a big disappointment or loss.",
+    "Glum": "Quietly miserable and not wanting to talk.",
+    "Bummed": "Disappointed because something didn't go your way."
+  },
+  "Mad": {
+    "Angry": "Filled with sudden, sharp irritation or fury.",
+    "Resentful": "Highly annoyed and actively upset with a situation.",
+    "Furious": "Boiling over with intense, high-energy rage.",
+    "Bitter": "Holding onto old grudges and feeling sharp anger.",
+    "Hostile": "Feeling an intense, deep dislike for a situation."
+  }
+}

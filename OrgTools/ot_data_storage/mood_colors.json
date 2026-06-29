@@ -1,0 +1,162 @@
+{
+  "Hyped": {
+    "hex": "#FFFF00",
+    "Pumped": "#FFF44F",
+    "Thrilled": "#FFEF00",
+    "Ecstatic": "#FFEE55",
+    "Amped": "#E3FF00",
+    "Eager": "#FFD700"
+  },
+  "Happy": {
+    "hex": "#FF5F1F",
+    "Glad": "#FFB07C",
+    "Cheerful": "#FF8833",
+    "Great": "#FFAA00",
+    "Excited": "#FF4500",
+    "Content": "#F88379"
+  },
+  "Energized": {
+    "hex": "#32CD32",
+    "Energetic": "#00FF00",
+    "Bouncy": "#7FFF00",
+    "Restless": "#39FF14",
+    "Wild": "#AFFF00",
+    "Rowdy": "#00FF7F"
+  },
+  "Proud": {
+    "hex": "#7851A9",
+    "Accomplished": "#601A4A",
+    "Successful": "#6A0DAD",
+    "Confident": "#9966CC",
+    "Strong": "#5D3FD3",
+    "Validated": "#DA70D6"
+  },
+  "Smart": {
+    "hex": "#0096FF",
+    "Focused": "#082567",
+    "Sharp": "#1F51FF",
+    "Capable": "#4682B4",
+    "Bright": "#00FFFF",
+    "Clever": "#A5F2F3"
+  },
+  "Loving": {
+    "hex": "#FF66CC",
+    "Cared-For": "#FFC0CB",
+    "Affectionate": "#FE828C",
+    "Close": "#E0A96D",
+    "Warm": "#FC4C4E",
+    "Adoring": "#CA1F7B"
+  },
+  "Helpful": {
+    "hex": "#FFC300",
+    "Kind": "#FFEEBB",
+    "Caring": "#FDFD96",
+    "Friendly": "#E6B800",
+    "Supportive": "#E1AD01",
+    "Generous": "#F4C430"
+  },
+  "Hopeful": {
+    "hex": "#98FF98",
+    "Optimistic": "#A3E4D7",
+    "Encouraged": "#BCDEC5",
+    "Eager": "#93C572",
+    "Inspired": "#00A36C",
+    "Reassured": "#ACE1AF"
+  },
+  "Chill": {
+    "hex": "#40E0D0",
+    "Relaxed": "#7FFFD4",
+    "Calm": "#66CDAA",
+    "Lazy": "#93E9BE",
+    "Mellow": "#4F97A3",
+    "Comfortable": "#008080"
+  },
+  "Good": {
+    "hex": "#FFFDD0",
+    "Decent": "#F5F5DC",
+    "Okay": "#E6D7B9",
+    "Fine": "#EAE6DF",
+    "Alright": "#FFFFF0",
+    "Safe": "#FEFCFF"
+  },
+  "Bored": {
+    "hex": "#808080",
+    "Dull": "#708090",
+    "Listless": "#B2BEB5",
+    "Apathetic": "#36454F",
+    "Restless": "#8B8589",
+    "Blah": "#918E85"
+  },
+  "Tired": {
+    "hex": "#BDB5D5",
+    "Sleepy": "#E6E6FA",
+    "Exhausted": "#2F2F4F",
+    "Sluggish": "#915F6D",
+    "Drained": "#CCCCFF",
+    "Worn-Out": "#4A4054"
+  },
+  "Confused": {
+    "hex": "#A67B5B",
+    "Lost": "#8A795D",
+    "Stuck": "#917651",
+    "Foggy": "#6B8E23",
+    "Flustered": "#CC9900",
+    "Mixed-Up": "#704214"
+  },
+  "Lonely": {
+    "hex": "#AFDBF5",
+    "Isolated": "#355E3B",
+    "Left-Out": "#2B6CC4",
+    "Forgotten": "#4F6B76",
+    "Disconnected": "#71879B",
+    "Homesick": "#A2B9C8"
+  },
+  "Annoyed": {
+    "hex": "#808000",
+    "Irritated": "#BDB76B",
+    "Frustrated": "#4F5D53",
+    "Grouchy": "#4B5320",
+    "Bothered": "#2A341E",
+    "Snappy": "#78866B"
+  },
+  "Worried": {
+    "hex": "#CC5500",
+    "Nervous": "#8B4513",
+    "Anxious": "#B87333",
+    "Uneasy": "#E2725B",
+    "Jittery": "#B06500",
+    "On-Edge": "#FFBF00"
+  },
+  "Hurt": {
+    "hex": "#3A122E",
+    "Offended": "#C54B8C",
+    "Let-Down": "#58111A",
+    "Crushed": "#4D3347",
+    "Bitter": "#614051",
+    "Jealous": "#3F2A47"
+  },
+  "Scared": {
+    "hex": "#191970",
+    "Afraid": "#000080",
+    "Terrified": "#000411",
+    "Panicky": "#111E2E",
+    "Spooked": "#252D3D",
+    "Fearful": "#000320"
+  },
+  "Sad": {
+    "hex": "#4B0082",
+    "Down": "#0047AB",
+    "Gloomy": "#4682B4",
+    "Heartbroken": "#123524",
+    "Glum": "#3F426F",
+    "Bummed": "#2F4F4F"
+  },
+  "Mad": {
+    "hex": "#DC143C",
+    "Angry": "#FF2400",
+    "Resentful": "#9B111E",
+    "Furious": "#8A0303",
+    "Bitter": "#CB4154",
+    "Hostile": "#800000"
+  }
+}
