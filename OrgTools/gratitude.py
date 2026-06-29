@@ -3,7 +3,6 @@ import json
 import os
 from datetime import datetime
 
-
 class GratitudeFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
