@@ -40,16 +40,13 @@ class OrgApp(ctk.CTk):
 
         daily_verse_text = self.set_daily_verse()
 
-        self.verse_label = ctk.CTkLabel(
-            master=self,
-            text=daily_verse_text,
-            font=("Arial", 16, "italic"),
-            wraplength=1400
-        )
-        self.verse_label.grid(row=0, column=0, padx=20, pady=(20, 10), sticky="ew")
+        self.verse_label = ctk.CTkLabel(master=self, text=daily_verse_text, font=("Arial", 16, "italic"), justify="center")
+        self.verse_label.grid(row=0, column=0, padx=80, pady=(25, 15), sticky="ew")
 
         self.tab_view = TabView(master=self, width=250, height=250)
         self.tab_view.grid(row=1, column=0, padx=20, pady=(10, 20), sticky="nsew")
+
+        self.bind("<Configure>", self.adjust_verse_wrapping)
 
     def set_daily_verse(self):
         json_path = os.path.join("verse_prep", "verses.json")
@@ -73,6 +70,11 @@ class OrgApp(ctk.CTk):
 
         return ('"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, '
                 'plans to give you hope and a future."\n— Jeremiah 29:11')
+
+    def adjust_verse_wrapping(self, event):
+        if event.widget == self:
+            available_width = self.winfo_width() - 160
+            self.verse_label.configure(wraplength=available_width)
 
 if __name__ == "__main__":
     app = OrgApp()
