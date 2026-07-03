@@ -1,0 +1,16 @@
+{
+    "breakout": {
+        "high_score": 0
+    },
+    "dino": {
+        "high_score": 0
+    },
+    "space_invaders": {
+        "high_score": 0
+    },
+    "tic_tac_toe": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 0
+    }
+}
