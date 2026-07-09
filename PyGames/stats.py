@@ -3,11 +3,10 @@ from colors import colors, text_color
 import random
 import json
 
-
 def show_stats(screen, clock):
     viewing = True
 
-    with open("high_scores.json", "r") as file:
+    with open("stats.json", "r") as file:
         data = json.load(file)
 
     screen_rect = screen.get_rect()
@@ -34,63 +33,55 @@ def show_stats(screen, clock):
     breakout_title_rect.centerx = center_x
     breakout_title_rect.y = 150
 
-    breakout_hs_text = f"High Score: {data['breakout']['high_score']}"
-    breakout_hs_surface = stats_font.render(breakout_hs_text, True, stats_color)
-    breakout_hs_rect = breakout_hs_surface.get_rect()
-    breakout_hs_rect.centerx = center_x
-    breakout_hs_rect.y = 190
+    breakout_stats = [
+        f"High Score: {data['breakout']['high_score']}"
+    ]
+    breakout_start_y = 190
+    breakout_spacing = 30
 
     dino_title_surface = subheading_font.render("DINO GAME", True, subheading_color)
     dino_title_rect = dino_title_surface.get_rect()
     dino_title_rect.centerx = center_x
     dino_title_rect.y = 240
 
-    dino_hs_text = f"High Score: {data['dino']['high_score']}"
-    dino_hs_surface = stats_font.render(dino_hs_text, True, stats_color)
-    dino_hs_rect = dino_hs_surface.get_rect()
-    dino_hs_rect.centerx = center_x
-    dino_hs_rect.y = 280
+    dino_stats = [
+        f"High Score: {data['dino']['high_score']}"
+    ]
+    dino_start_y = 280
+    dino_spacing = 30
 
     space_title_surface = subheading_font.render("SPACE INVADERS", True, subheading_color)
     space_title_rect = space_title_surface.get_rect()
     space_title_rect.centerx = center_x
     space_title_rect.y = 330
 
-    space_hs_text = f"High Score: {data['space_invaders']['high_score']}"
-    space_hs_surface = stats_font.render(space_hs_text, True, stats_color)
-    space_hs_rect = space_hs_surface.get_rect()
-    space_hs_rect.centerx = center_x
-    space_hs_rect.y = 370
+    space_stats = [
+        f"High Score: {data['space_invaders']['high_score']}"
+    ]
+    space_start_y = 370
+    space_spacing = 30
 
     ttt_title_surface = subheading_font.render("TIC TAC TOE", True, subheading_color)
     ttt_title_rect = ttt_title_surface.get_rect()
     ttt_title_rect.centerx = center_x
     ttt_title_rect.y = 420
 
-    ttt_wins_text = f"Wins: {data['tic_tac_toe']['wins']}"
-    ttt_wins_surface = stats_font.render(ttt_wins_text, True, stats_color)
-    ttt_wins_rect = ttt_wins_surface.get_rect()
-    ttt_wins_rect.centerx = center_x
-    ttt_wins_rect.y = 460
-
-    ttt_losses_text = f"Losses: {data['tic_tac_toe']['losses']}"
-    ttt_losses_surface = stats_font.render(ttt_losses_text, True, stats_color)
-    ttt_losses_rect = ttt_losses_surface.get_rect()
-    ttt_losses_rect.centerx = center_x
-    ttt_losses_rect.y = 490
-
-    ttt_ties_text = f"Ties: {data['tic_tac_toe']['ties']}"
-    ttt_ties_surface = stats_font.render(ttt_ties_text, True, stats_color)
-    ttt_ties_rect = ttt_ties_surface.get_rect()
-    ttt_ties_rect.centerx = center_x
-    ttt_ties_rect.y = 520
+    ttt_stats = [
+        ("Player V Comp.", "Player V Player"),
+        (f"Wins: {data['tic_tac_toe']['single_player']['wins']}", f"Wins: {data['tic_tac_toe']['multiplayer']['wins']}"),
+        (f"Losses: {data['tic_tac_toe']['single_player']['losses']}", f"Losses: {data['tic_tac_toe']['multiplayer']['losses']}"),
+        (f"Ties: {data['tic_tac_toe']['single_player']['ties']}", f"Ties: {data['tic_tac_toe']['multiplayer']['ties']}")
+    ]
+    ttt_start_y = 460
+    ttt_spacing = 30
+    column_offset = 120
 
     return_color = random.choice(colors)
     return_text_color = text_color(return_color)
 
     return_button = pygame.Rect(0, 0, 270, 50)
     return_button.centerx = center_x
-    return_button.y = 600
+    return_button.y = 620
 
     return_text = stats_font.render("Resume Game", True, return_text_color)
     return_text_rect = return_text.get_rect()
@@ -111,13 +102,39 @@ def show_stats(screen, clock):
         screen.blit(space_title_surface, space_title_rect)
         screen.blit(ttt_title_surface, ttt_title_rect)
 
-        screen.blit(breakout_hs_surface, breakout_hs_rect)
-        screen.blit(dino_hs_surface, dino_hs_rect)
-        screen.blit(space_hs_surface, space_hs_rect)
+        for index, line_text in enumerate(breakout_stats):
+            line_surface = stats_font.render(line_text, True, stats_color)
+            line_rect = line_surface.get_rect()
+            line_rect.centerx = center_x
+            line_rect.y = breakout_start_y + (index * breakout_spacing)
+            screen.blit(line_surface, line_rect)
 
-        screen.blit(ttt_wins_surface, ttt_wins_rect)
-        screen.blit(ttt_losses_surface, ttt_losses_rect)
-        screen.blit(ttt_ties_surface, ttt_ties_rect)
+        for index, line_text in enumerate(dino_stats):
+            line_surface = stats_font.render(line_text, True, stats_color)
+            line_rect = line_surface.get_rect()
+            line_rect.centerx = center_x
+            line_rect.y = dino_start_y + (index * dino_spacing)
+            screen.blit(line_surface, line_rect)
+
+        for index, line_text in enumerate(space_stats):
+            line_surface = stats_font.render(line_text, True, stats_color)
+            line_rect = line_surface.get_rect()
+            line_rect.centerx = center_x
+            line_rect.y = space_start_y + (index * space_spacing)
+            screen.blit(line_surface, line_rect)
+
+        for index, (pvc_text, pvp_text) in enumerate(ttt_stats):
+            pvc_surface = stats_font.render(pvc_text, True, stats_color)
+            pvc_rect = pvc_surface.get_rect()
+            pvc_rect.centerx = center_x - column_offset
+            pvc_rect.y = ttt_start_y + (index * ttt_spacing)
+            screen.blit(pvc_surface, pvc_rect)
+
+            pvp_surface = stats_font.render(pvp_text, True, stats_color)
+            pvp_rect = pvp_surface.get_rect()
+            pvp_rect.centerx = center_x + column_offset
+            pvp_rect.y = ttt_start_y + (index * ttt_spacing)
+            screen.blit(pvp_surface, pvp_rect)
 
         pygame.draw.rect(screen, return_color, return_button)
         screen.blit(return_text, return_text_rect)

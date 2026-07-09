@@ -112,7 +112,7 @@ def warning(screen, clock):
     overlay.fill((0, 0, 0))
     overlay.set_alpha(150)
 
-    menu_title_font = pygame.font.SysFont("Arial", 40, bold=True)
+    menu_title_font = pygame.font.SysFont("Arial", 50, bold=True)
     menu_title_surface = menu_title_font.render("Are you sure you would like to exit?", True, "white")
 
     menu_desc_font = pygame.font.SysFont("Arial", 35, italic=True)
