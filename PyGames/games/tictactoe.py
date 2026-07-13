@@ -35,7 +35,6 @@ def computer_move(board, computer_symbol):
 
 def run_ttt(screen, clock):
     running = True
-    is_paused = False
 
     current_screen = "mode select"
     game_mode = None
@@ -104,6 +103,7 @@ def run_ttt(screen, clock):
 
     while running:
         events = pygame.event.get()
+
         for event in events:
             if event.type == pygame.QUIT:
                 return "quit"
