@@ -116,6 +116,7 @@ def run_dino(screen, clock):
 
             if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 paused = True
+
                 while paused:
                     choice = pause.pause_game(screen, clock)
 
