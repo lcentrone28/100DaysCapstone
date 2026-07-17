@@ -1,5 +1,5 @@
 import pygame
-import PyGames.pause as pause
+import pause
 from colors import colors, text_color
 import random
 import json
