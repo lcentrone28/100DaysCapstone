@@ -2,6 +2,7 @@ import pygame
 import PyGames.pause as pause
 from colors import colors, text_color
 import random
+import json
 
 WIN_CONDITIONS = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -35,6 +36,7 @@ def computer_move(board, computer_symbol):
 
 def run_ttt(screen, clock):
     running = True
+    stats_updated = False
 
     current_screen = "mode select"
     game_mode = None
@@ -223,6 +225,37 @@ def run_ttt(screen, clock):
                                     current_screen = "game over"
                                 else:
                                     current_turn = "O" if current_turn == "X" else "X"
+        if current_screen == "game over" and not stats_updated:
+            try:
+                with open("stats.json", "r") as file:
+                    data = json.load(file)
+            except (FileNotFoundError, json.JSONDecodeError):
+                data = {
+                    "tic_tac_toe": {
+                        "single_player": {"wins": 0, "losses": 0, "ties": 0},
+                        "multiplayer": {"wins": 0, "losses": 0, "ties": 0}
+                    }
+                }
+
+            mode_key = "single_player" if game_mode == "single" else "multiplayer"
+
+            if "Tie" in game_result:
+                data["tic_tac_toe"][mode_key]["ties"] += 1
+            elif game_mode == "single":
+                if player_role in game_result:
+                    data["tic_tac_toe"][mode_key]["wins"] += 1
+                else:
+                    data["tic_tac_toe"][mode_key]["losses"] += 1
+            else:
+                if "X" in game_result:
+                    data["tic_tac_toe"][mode_key]["wins"] += 1
+                else:
+                    data["tic_tac_toe"][mode_key]["losses"] += 1
+
+            with open("stats.json", "w") as file:
+                json.dump(data, file, indent=4)
+
+            stats_updated = True
 
         elif current_screen == "game over":
 
@@ -242,6 +275,7 @@ def run_ttt(screen, clock):
             for event in events:
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if replay_button.collidepoint(event.pos):
+                        stats_updated = False
                         current_screen = "mode select"
                     elif menu_button.collidepoint(event.pos):
                         return "back"

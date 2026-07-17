@@ -31,40 +31,45 @@ def show_stats(screen, clock):
     breakout_title_surface = subheading_font.render("BREAKOUT", True, subheading_color)
     breakout_title_rect = breakout_title_surface.get_rect()
     breakout_title_rect.centerx = center_x
-    breakout_title_rect.y = 150
+    breakout_title_rect.y = 120
 
     breakout_stats = [
-        f"High Score: {data['breakout']['high_score']}"
+        ("Cavity Mode:", "Enabled", "Disabled"),
+        ("Single Player:", f"{data['breakout']['single_player']['cavity_enabled']}",
+         f"{data['breakout']['single_player']['cavity_disabled']}"),
+        ("Multiplayer:", f"{data['breakout']['multiplayer']['cavity_enabled']}",
+         f"{data['breakout']['multiplayer']['cavity_disabled']}")
     ]
-    breakout_start_y = 190
+    breakout_start_y = 160
     breakout_spacing = 30
+    bo_column_offset = 150
 
-    dino_title_surface = subheading_font.render("DINO GAME", True, subheading_color)
+    dino_title_surface = subheading_font.render("DINO", True, subheading_color)
     dino_title_rect = dino_title_surface.get_rect()
     dino_title_rect.centerx = center_x
-    dino_title_rect.y = 240
+    dino_title_rect.y = 270
 
     dino_stats = [
         f"High Score: {data['dino']['high_score']}"
     ]
-    dino_start_y = 280
+    dino_start_y = 310
     dino_spacing = 30
 
     space_title_surface = subheading_font.render("SPACE INVADERS", True, subheading_color)
     space_title_rect = space_title_surface.get_rect()
     space_title_rect.centerx = center_x
-    space_title_rect.y = 330
+    space_title_rect.y = 360
 
     space_stats = [
         f"High Score: {data['space_invaders']['high_score']}"
     ]
-    space_start_y = 370
+    space_start_y = 400
     space_spacing = 30
 
     ttt_title_surface = subheading_font.render("TIC TAC TOE", True, subheading_color)
     ttt_title_rect = ttt_title_surface.get_rect()
     ttt_title_rect.centerx = center_x
-    ttt_title_rect.y = 420
+    ttt_title_rect.y = 450
 
     ttt_stats = [
         ("Player V Comp.", "Player V Player"),
@@ -72,7 +77,7 @@ def show_stats(screen, clock):
         (f"Losses: {data['tic_tac_toe']['single_player']['losses']}", f"Losses: {data['tic_tac_toe']['multiplayer']['losses']}"),
         (f"Ties: {data['tic_tac_toe']['single_player']['ties']}", f"Ties: {data['tic_tac_toe']['multiplayer']['ties']}")
     ]
-    ttt_start_y = 460
+    ttt_start_y = 490
     ttt_spacing = 30
     column_offset = 120
 
@@ -102,12 +107,24 @@ def show_stats(screen, clock):
         screen.blit(space_title_surface, space_title_rect)
         screen.blit(ttt_title_surface, ttt_title_rect)
 
-        for index, line_text in enumerate(breakout_stats):
-            line_surface = stats_font.render(line_text, True, stats_color)
-            line_rect = line_surface.get_rect()
-            line_rect.centerx = center_x
-            line_rect.y = breakout_start_y + (index * breakout_spacing)
-            screen.blit(line_surface, line_rect)
+        for index, (label_text, enabled_text, disabled_text) in enumerate(breakout_stats):
+            label_surface = stats_font.render(label_text, True, stats_color)
+            label_rect = label_surface.get_rect()
+            label_rect.centerx = center_x - bo_column_offset
+            label_rect.y = breakout_start_y + (index * breakout_spacing)
+            screen.blit(label_surface, label_rect)
+
+            enabled_surface = stats_font.render(enabled_text, True, stats_color)
+            enabled_rect = enabled_surface.get_rect()
+            enabled_rect.centerx = center_x
+            enabled_rect.y = breakout_start_y + (index * breakout_spacing)
+            screen.blit(enabled_surface, enabled_rect)
+
+            disabled_surface = stats_font.render(disabled_text, True, stats_color)
+            disabled_rect = disabled_surface.get_rect()
+            disabled_rect.centerx = center_x + bo_column_offset
+            disabled_rect.y = breakout_start_y + (index * breakout_spacing)
+            screen.blit(disabled_surface, disabled_rect)
 
         for index, line_text in enumerate(dino_stats):
             line_surface = stats_font.render(line_text, True, stats_color)

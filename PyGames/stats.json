@@ -1,6 +1,13 @@
 {
     "breakout": {
-        "high_score": 0
+        "single_player": {
+            "cavity_enabled": 0,
+            "cavity_disabled": 0
+        },
+        "multiplayer": {
+            "cavity_enabled": 0,
+            "cavity_disabled": 0
+        }
     },
     "dino": {
         "high_score": 0

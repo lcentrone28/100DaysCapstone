@@ -2,6 +2,7 @@ import pygame
 import PyGames.pause as pause
 from colors import colors, text_color
 import random
+import json
 
 def init_aliens(rows, cols, x_start, y_start, w, h, x_space, y_space):
     alien_list = []
@@ -15,6 +16,7 @@ def init_aliens(rows, cols, x_start, y_start, w, h, x_space, y_space):
 
 def run_space(screen, clock):
     running = True
+    stats_updated = False
 
     current_screen = "level start"
     next_level_target = "lvl 1"
@@ -151,6 +153,7 @@ def run_space(screen, clock):
             elif current_screen in ["game over", "game won"]:
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if replay_button.collidepoint(event.pos):
+                        stats_updated = False
                         score = 0
                         health = 100
                         player_lasers.clear()
@@ -326,6 +329,19 @@ def run_space(screen, clock):
             level_start_text = title_font.render(f"LEVEL {display_num}", True, "white")
             screen.blit(level_start_text, (center_x - level_start_text.get_width() // 2,
                                            screen_rect.centery - level_start_text.get_height() // 2))
+
+        if current_screen in ["game over", "game won"] and not stats_updated:
+            try:
+                with open("stats.json", "r") as file:
+                    data = json.load(file)
+            except (FileNotFoundError, json.JSONDecodeError):
+                data = {"space_invaders": {"high_score": 0}}
+
+            if score > data["space_invaders"]["high_score"]:
+                data["space_invaders"]["high_score"] = score
+                with open("stats.json", "w") as file:
+                    json.dump(data, file, indent=4)
+            stats_updated = True
 
         elif current_screen in ["game over", "game won"]:
             msg = "You Win" if current_screen == "game won" else "Game Over"

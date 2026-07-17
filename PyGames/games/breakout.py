@@ -2,6 +2,7 @@ import pygame
 import PyGames.pause as pause
 from colors import colors, text_color
 import random
+import json
 
 def init_blocks(rows, cols, x_start, y_start, w, h, x_space, y_space,
                 brick_colors):
@@ -32,6 +33,8 @@ def init_blocks(rows, cols, x_start, y_start, w, h, x_space, y_space,
 
 def run_breakout(screen, clock):
     running = True
+    stats_updated = False
+
     current_screen = "mode select"
     game_mode = None
     cavity_mode = False
@@ -138,11 +141,11 @@ def run_breakout(screen, clock):
     title_surface = title_font.render("Select Breakout Mode", True, "white")
     screen.blit(title_surface, (center_x - title_surface.get_width() // 2, 120))
 
-    p1_text = button_font.render("One Player", True, p1_text_color)
+    p1_text = button_font.render("Single Player", True, p1_text_color)
     p1_text_rect = p1_text.get_rect()
     p1_text_rect.center = p1_button.center
 
-    p2_text = button_font.render("Two Player", True, p2_text_color)
+    p2_text = button_font.render("Multiplayer", True, p2_text_color)
     p2_text_rect = p2_text.get_rect()
     p2_text_rect.center = p2_button.center
 
@@ -296,6 +299,12 @@ def run_breakout(screen, clock):
             elif current_screen in ["game over", "game won"]:
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if replay_button.collidepoint(event.pos):
+                        stats_updated = False
+                        game_mode = None
+
+                        score = 0
+                        balls_left = 0
+                        active_balls = 0
                         current_screen = "mode select"
                     elif menu_button.collidepoint(event.pos):
                         return "back"
@@ -489,6 +498,27 @@ def run_breakout(screen, clock):
 
             screen.blit(balls_left_title_text, (balls_start_x, hud_y))
             screen.blit(balls_left_text, (balls_start_x + b_title_w, hud_y))
+
+        if current_screen in ["game over", "game won"] and not stats_updated:
+            try:
+                with open("stats.json", "r") as file:
+                    data = json.load(file)
+            except (FileNotFoundError, json.JSONDecodeError):
+                data = {
+                    "breakout": {
+                        "single_player": {"cavity_enabled": 0, "cavity_disabled": 0},
+                        "multiplayer": {"cavity_enabled": 0, "cavity_disabled": 0}
+                    }
+                }
+
+            mode_key = "single_player" if game_mode == "single" else "multiplayer"
+            cavity_key = "cavity_enabled" if cavity_mode else "cavity_disabled"
+
+            if score > data["breakout"][mode_key][cavity_key]:
+                data["breakout"][mode_key][cavity_key] = score
+                with open("stats.json", "w") as file:
+                    json.dump(data, file, indent=4)
+            stats_updated = True
 
         elif current_screen in ["game over", "game won"]:
             msg = "You Win" if current_screen == "game won" else "Game Over"

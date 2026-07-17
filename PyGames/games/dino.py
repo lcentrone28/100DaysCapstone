@@ -2,6 +2,7 @@ import pygame
 import PyGames.pause as pause
 from colors import colors, text_color
 import random
+import json
 
 def get_x(target_x, existing_obstacles, min_distance=220):
     while any(abs(target_x - obs.x) < min_distance for obs in existing_obstacles):
@@ -10,6 +11,7 @@ def get_x(target_x, existing_obstacles, min_distance=220):
 
 def run_dino(screen, clock):
     running = True
+    stats_updated = False
 
     current_screen = "opening"
     true_score = 0
@@ -146,6 +148,7 @@ def run_dino(screen, clock):
             elif current_screen == "game over":
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     if replay_button.collidepoint(event.pos):
+                        stats_updated = False
                         true_score = 0
                         pt_spawns = 0
                         tc1_spawns = 0
@@ -317,6 +320,20 @@ def run_dino(screen, clock):
 
             if true_score >= 2200 and pt_spawns > 2 and player.colliderect(pt):
                 current_screen = "game over"
+
+        if current_screen == "game over" and not stats_updated:
+            display_score = true_score // 100
+            try:
+                with open("stats.json", "r") as file:
+                    data = json.load(file)
+            except (FileNotFoundError, json.JSONDecodeError):
+                data = {"dino": {"high_score": 0}}
+
+            if display_score > data["dino"]["high_score"]:
+                data["dino"]["high_score"] = display_score
+                with open("stats.json", "w") as file:
+                    json.dump(data, file, indent=4)
+            stats_updated = True
 
         elif current_screen == "game over":
             game_over_surface = title_font.render("Game Over", True, "white")
