@@ -16,8 +16,9 @@ GRAYSCALE_PALETTE = [
     "rgba(70, 70, 70, 0.9)"
 ]
 
-OVERALL_PATH = os.path.join("data_prep", "merged_data", "overall_trends.csv")
-ZIP_PATH = os.path.join("data_prep", "merged_data", "zip_trends.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OVERALL_PATH = os.path.join(BASE_DIR, "data_prep", "merged_data", "overall_trends.csv")
+ZIP_PATH = os.path.join(BASE_DIR, "data_prep", "merged_data", "zip_trends.csv")
 
 def verify_data_assets_exist() -> bool:
     return os.path.exists(OVERALL_PATH) and os.path.exists(ZIP_PATH)
