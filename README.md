@@ -20,4 +20,4 @@ This diagram serves as the initial architectural blueprint mapped out prior to c
 
 ## Financial Impact on Shelters
 
-Access the finished product ![here](https://100dayscapstonefios.streamlit.app/).
+Access the finished product [here](https://100dayscapstonefios.streamlit.app/).
