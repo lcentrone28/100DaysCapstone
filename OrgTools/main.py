@@ -2,6 +2,7 @@ import customtkinter as ctk
 import json
 import os
 import datetime
+import sys
 
 from gratitude import GratitudeFrame
 from moods import MoodsFrame
@@ -9,6 +10,11 @@ from to_do import ToDoFrame
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("green")
+
+def get_resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 class TabView(ctk.CTkTabview):
     def __init__(self, master, **kwargs):
@@ -49,7 +55,7 @@ class OrgApp(ctk.CTk):
         self.bind("<Configure>", self.adjust_verse_wrapping)
 
     def set_daily_verse(self):
-        json_path = os.path.join("verse_prep", "verses.json")
+        json_path = get_resource_path(os.path.join("verse_prep", "verses.json"))
 
         try:
             with open(json_path, "r", encoding="utf-8") as file:

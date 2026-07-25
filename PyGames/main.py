@@ -1,8 +1,9 @@
 import pygame
 import sys
 import os
-os.environ['SDL_MOUSE_FOCUS_CLICKTHROUGH'] = '1'
 import random
+
+os.environ['SDL_MOUSE_FOCUS_CLICKTHROUGH'] = '1'
 
 import games.breakout as breakout
 import games.dino as dino

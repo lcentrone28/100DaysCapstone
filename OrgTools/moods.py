@@ -5,9 +5,9 @@ import datetime
 import calendar
 from tkinter import messagebox
 
-from OrgTools.moods_functionality.mood_calendar import render_calendar_view
-from OrgTools.moods_functionality.mood_frequency import render_frequency_chart
-from OrgTools.moods_functionality.mood_trends import render_trends_view
+from moods_functionality.mood_calendar import render_calendar_view
+from moods_functionality.mood_frequency import render_frequency_chart
+from moods_functionality.mood_trends import render_trends_view
 
 class MoodsFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
