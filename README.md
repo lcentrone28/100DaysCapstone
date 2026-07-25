@@ -21,3 +21,7 @@ This diagram serves as the initial architectural blueprint mapped out prior to c
 ## Financial Impact on Shelters
 
 Access the finished product [here](https://100dayscapstonefios.streamlit.app/).
+
+## Other Programs
+
+To run the other programs please clone the repository and run it in your IDE (developed in PyCharm). You may need to install dependencies before pressing play on each of the main scripts for each program.
